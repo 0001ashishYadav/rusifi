@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+import React from "react";
+
+const HomePage = () => {
+  return <div>HomePage</div>;
+};
+
+export default HomePage;
+=======
 "use client";
 import React from "react";
 import { motion } from "motion/react";
@@ -355,3 +364,4 @@ const App = () => {
 };
 
 export default App;
+>>>>>>> HomePage
