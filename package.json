@@ -9,7 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
     "framer-motion": "^12.38.0",
+>>>>>>> 256da76fdcc5973c335efd660ea8e0c7d510a15a
     "lucide-react": "^0.577.0",
     "motion": "^12.38.0",
     "next": "16.2.1",
