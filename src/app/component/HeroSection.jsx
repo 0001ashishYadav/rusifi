@@ -122,14 +122,16 @@ function VerticalScrollCol({ images, direction, speed, cardH }) {
         minWidth: 0,
         height: `${cardH}px`,
         // borderRadius: "12px",
-      }}>
+      }}
+    >
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           gap: `${GAP}px`,
           animation: `${animName} ${speed} linear infinite`,
-        }}>
+        }}
+      >
         {doubled.map((rug, i) => (
           <div
             key={i}
@@ -141,7 +143,8 @@ function VerticalScrollCol({ images, direction, speed, cardH }) {
               overflow: "hidden",
               flexShrink: 0,
               border: "1px solid rgba(255,255,255,0.07)",
-            }}>
+            }}
+          >
             <img
               src={rug.src}
               alt={rug.name}
@@ -161,7 +164,8 @@ function VerticalScrollCol({ images, direction, speed, cardH }) {
                 background: "rgba(0,0,0,0.5)",
                 backdropFilter: "blur(4px)",
                 padding: "6px 10px",
-              }}>
+              }}
+            >
               <p
                 style={{
                   color: "#fff",
@@ -169,7 +173,8 @@ function VerticalScrollCol({ images, direction, speed, cardH }) {
                   fontWeight: 300,
                   margin: 0,
                   letterSpacing: "0.05em",
-                }}>
+                }}
+              >
                 {rug.name}
               </p>
               <p
@@ -179,7 +184,8 @@ function VerticalScrollCol({ images, direction, speed, cardH }) {
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   margin: "2px 0 0",
-                }}>
+                }}
+              >
                 {rug.origin}
               </p>
             </div>
@@ -241,7 +247,8 @@ const HeroSection = () => {
       {/* Header */}
       <div
         className="relative w-full bg-black  flex items-center justify-center overflow-hidden"
-        style={{ height: "140px" }}>
+        style={{ height: "140px" }}
+      >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -259,7 +266,8 @@ const HeroSection = () => {
             fontSize: "clamp(1.2rem, 4vw, 2.4rem)",
             fontWeight: 300,
             letterSpacing: "0.38em",
-          }}>
+          }}
+        >
           Tarun Tahiliani
         </h1>
       </div>
@@ -274,7 +282,8 @@ const HeroSection = () => {
           gap: `${GAP}px`,
           boxSizing: "border-box",
           overflow: "hidden",
-        }}>
+        }}
+      >
         {visibleColumns.map((col, idx) => (
           <VerticalScrollCol
             key={idx}
@@ -289,7 +298,8 @@ const HeroSection = () => {
       {/* Quote */}
       <div
         className="w-full flex items-center justify-center px-5 py-16"
-        style={{ backgroundColor: "#5C1A0A" }}>
+        style={{ backgroundColor: "#5C1A0A" }}
+      >
         <p
           className="text-center max-w-2xl leading-relaxed"
           style={{
@@ -300,7 +310,8 @@ const HeroSection = () => {
             letterSpacing: "0.08em",
             fontStyle: "italic",
             textTransform: "capitalize",
-          }}>
+          }}
+        >
           The starting point on my mood-board, the colours and techniques, are
           always totally Indian. There is no other way to describe this.
         </p>
@@ -309,15 +320,15 @@ const HeroSection = () => {
       <section className="w-full bg-white px-6 py-16 md:px-16 lg:px-40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
           {/* Left — 2 Images side by side */}
-          <div className="flex flex-row gap-3 w-full md:w-1/2 flex-shrink-0">
-            <div className="w-1/2 aspect-[3/4] overflow-hidden">
+          <div className="flex flex-row gap-3 w-full md:w-1/2 shrink-0">
+            <div className="w-1/2 aspect-3/4 overflow-hidden">
               <img
                 src="https://www.obeetee.in/cdn/shop/files/B1094471.png?v=1681815556&width=300"
                 alt="Tarun Tahiliani portrait"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-1/2 aspect-[3/4] overflow-hidden">
+            <div className="w-1/2 aspect-3/4 overflow-hidden">
               <img
                 src="https://www.obeetee.in/cdn/shop/files/Tarun-Tahiliani-Chikankari-collection-for-Obeetee.png?v=1754384929&width=300"
                 alt="Tarun Tahiliani rug"
@@ -335,7 +346,8 @@ const HeroSection = () => {
                 fontSize: "clamp(2rem, 4vw, 3rem)",
                 fontWeight: 400,
                 letterSpacing: "0.02em",
-              }}>
+              }}
+            >
               Tarun <br /> Tahiliani
             </h2>
 
@@ -345,7 +357,8 @@ const HeroSection = () => {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontSize: "clamp(0.95rem, 1.2vw, 1.05rem)",
                 fontWeight: 400,
-              }}>
+              }}
+            >
               Renowned for his aesthetic of inspired reinvention, Tarun
               Tahiliani helms the first series of this campaign with his
               quintessential aesthetic of understated opulence. The three
@@ -363,7 +376,8 @@ const HeroSection = () => {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontSize: "0.85rem",
                 letterSpacing: "0.1em",
-              }}>
+              }}
+            >
               View Collection
             </a>
           </div>
