@@ -29,18 +29,20 @@ export default function Footer() {
           <h2 className="text-white tracking-widest">SHOPPING WITH US</h2>
 
           <div className="flex flex-col space-y-2">
-            <Link href={"/"}>
+            <Link href={"/shipping"}>
               <p>Shipping</p>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/return"}>
               <p>Return/Exchange</p>
             </Link>
-            <Link href={"/"}>Buy Back Programme</Link>
-            <Link href={"/"}>Terms & Conditions</Link>
-            <Link href={"/"}>Shop Carpets</Link>
-            <Link href={"/"}>Frequently Asked Questions</Link>
-            <Link href={"/"}>Privacy</Link>
-            <Link href={"/"}>Warranty</Link>
+            <Link href={"/buy-back-programme"}>Buy Back Programme</Link>
+            <Link href={"/terms-and-conditions"}>Terms & Conditions</Link>
+            <Link href={"/sale"}>Shop Carpets</Link>
+            <Link href={"/frequently-asked-questions"}>
+              Frequently Asked Questions
+            </Link>
+            <Link href={"/privacy"}>Privacy</Link>
+            <Link href={"/waranty"}>Warranty</Link>
           </div>
         </div>
 
@@ -48,9 +50,9 @@ export default function Footer() {
         <div className="space-y-4">
           <h2 className="text-white tracking-widest">ABOUT US</h2>
 
-          <ul className="space-y-3 text-sm">
-            <li>Contact Us</li>
-            <li>Legacy</li>
+          <ul className="text-sm flex flex-col space-y-2">
+            <Link href={"/contactUs"}>Contact Us</Link>
+            <Link href={"/legacy"}>Legacy</Link>
             <li>Sustainability</li>
             <li>Craftsmanship</li>
             <li>Blog</li>
@@ -97,7 +99,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="mt-8 text-sm text-gray-400">
-        © 2026 - Rusifi Pvt. Ltd.
+        © 2026 - RugSifi Pvt. Ltd.
       </div>
 
       <div className="border-t border-gray-700 mt-6"></div>
