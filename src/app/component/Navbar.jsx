@@ -263,7 +263,7 @@ export default function Navbar() {
                     lg:text-[26px] lg:tracking-[7px]
                     xl:text-[28px] xl:tracking-[8px]"
                 >
-                  OBEETEE
+                  RugSifi
                 </span>
                 <span className="block font-jost text-[8px] tracking-[3px] text-amber-700 uppercase mt-0.5">
                   carpet &amp; home
