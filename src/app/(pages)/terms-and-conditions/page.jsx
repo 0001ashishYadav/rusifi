@@ -25,13 +25,13 @@ const termsData = [
     id: "intellectual-property",
     title: "2. Intellectual Property",
     content:
-      "All content included on this site, such as text, graphics, logos, button icons, images, and audio clips, is the property of Obeetee Private Limited. The compilation of all content on this site is the exclusive property of Obeetee and protected by international copyright laws.",
+      "All content included on this site, such as text, graphics, logos, button icons, images, and audio clips, is the property of RugSifi Private Limited. The compilation of all content on this site is the exclusive property of RugSifi and protected by international copyright laws.",
   },
   {
     id: "user-account",
     title: "3. User Account & Security",
     content:
-      "If you use this site, you are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account. Obeetee reserves the right to refuse service or terminate accounts at its sole discretion.",
+      "If you use this site, you are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account. RugSifi reserves the right to refuse service or terminate accounts at its sole discretion.",
   },
   {
     id: "pricing-payments",
@@ -49,7 +49,7 @@ const termsData = [
     id: "limitations",
     title: "6. Limitation of Liability",
     content:
-      "Obeetee shall not be liable for any special or consequential damages that result from the use of, or the inability to use, the materials on this site or the performance of the products, even if Obeetee has been advised of the possibility of such damages.",
+      "RugSifi shall not be liable for any special or consequential damages that result from the use of, or the inability to use, the materials on this site or the performance of the products, even if RugSifi has been advised of the possibility of such damages.",
   },
   {
     id: "governing-law",
@@ -221,7 +221,7 @@ export default function TermsPage() {
           {/* --- FOOTER NOTICE --- */}
           <footer className="mt-32 pt-12 border-t border-gray-100 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-sm text-gray-400 leading-relaxed max-w-md">
-              By using our website, you agree to these terms. Obeetee Private
+              By using our website, you agree to these terms. RugSifi Private
               Limited reserves the right to update these policies at any time
               without prior notice.
             </div>

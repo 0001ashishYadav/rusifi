@@ -164,7 +164,7 @@ const RugCard = ({ rug }) => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="flex flex-col items-center group cursor-pointer"
     >
-      <div className="relative w-full aspect-[3/4] overflow-hidden bg-gray-100 mb-4">
+      <div className="relative w-full aspect-3/4 overflow-hidden bg-gray-100 mb-4">
         <img
           src={rug.image}
           alt={rug.name}
@@ -208,7 +208,7 @@ const RugCard = ({ rug }) => {
 
 const CollectionPage = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center py-16 px-4 md:px-8 lg:px-12 max-w-[1440px] mx-auto">
+    <div className="min-h-screen flex flex-col items-center py-16 px-4 md:px-8 lg:px-12 max-w-360 mx-auto">
       <motion.header
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -261,7 +261,7 @@ const CollectionPage = () => {
               high-quality decor items. Handmade rugs production is booming in
               India, where talented artisans create exquisite and distinctive
               patterns that highlight the nation's rich cultural past. One of
-              the top handmade rugs online store is Obeetee Carpets, which sells
+              the top handmade rugs online store is RugSifi Carpets, which sells
               a variety of carpets and rugs that are ideal for any home. It is
               crucial to take both the carpet's functionality and visual appeal
               into account when selecting the best handmade rug for your home.
@@ -270,32 +270,32 @@ const CollectionPage = () => {
 
           <div className="space-y-4">
             <h3 className="font-semibold text-black">
-              Why should you choose Obeetee Carpets to buy handmade rugs online?
+              Why should you choose RugSifi Carpets to buy handmade rugs online?
             </h3>
             <p>
-              If you are looking to buy handmade rugs online, Obeetee Carpets
-              should be at the top of your list. Obeetee Carpets is one of the
+              If you are looking to buy handmade rugs online, RugSifi Carpets
+              should be at the top of your list. RugSifi Carpets is one of the
               leading rug manufacturers in India, known for producing
               high-quality, handcrafted rugs that are both luxurious and
-              durable. Here are some reasons why you should choose Obeetee
+              durable. Here are some reasons why you should choose RugSifi
               Carpets to buy handmade rugs online:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                <strong>Wide Selection:</strong> Obeetee Carpets offers a wide
+                <strong>Wide Selection:</strong> RugSifi Carpets offers a wide
                 selection of rugs online, ranging from traditional to modern
                 designs, in a variety of colors, shapes, and sizes. You can
                 easily find a rug that suits your taste and decor.
               </li>
               <li>
-                <strong>Handmade Craftsmanship:</strong> Obeetee Carpets is
+                <strong>Handmade Craftsmanship:</strong> RugSifi Carpets is
                 committed to preserving the ancient art of rug-making by
                 employing skilled craftsmen who use traditional techniques to
                 create each rug by hand. This ensures that each rug is unique,
                 with its own character and story.
               </li>
               <li>
-                <strong>Quality Materials:</strong> Obeetee Carpets only uses
+                <strong>Quality Materials:</strong> RugSifi Carpets only uses
                 the highest quality materials, such as wool, silk, and cotton,
                 to make their rugs. This ensures that the rugs are not only
                 beautiful, but also durable and long-lasting.

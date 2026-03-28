@@ -28,7 +28,7 @@ const faqData = [
       },
       {
         q: "Can I modify my order after placing it?",
-        a: "Modifications are possible within 24 hours of placing the order. Please contact our support team immediately at customercare@obeetee.com with your Order ID.",
+        a: "Modifications are possible within 24 hours of placing the order. Please contact our support team immediately at customercare@RugSifi.com with your Order ID.",
       },
       {
         q: "What payment methods do you accept?",
@@ -82,7 +82,7 @@ const faqData = [
       },
       {
         q: "How do I initiate a return?",
-        a: "Email us at customercare@obeetee.com within 7 days of delivery. Include your order number and photos of the product you wish to return.",
+        a: "Email us at customercare@RugSifi.com within 7 days of delivery. Include your order number and photos of the product you wish to return.",
       },
     ],
   },
@@ -309,7 +309,7 @@ export default function FAQPage() {
 
           <div className="flex flex-col md:flex-row justify-center gap-6">
             <a
-              href="mailto:customercare@obeetee.com"
+              href="mailto:customercare@RugSifi.com"
               className="flex items-center justify-center gap-3 bg-white text-amber-900 px-10 py-4 rounded-full font-bold text-sm hover:bg-amber-50 transition-all"
             >
               <Mail size={18} /> Email Support

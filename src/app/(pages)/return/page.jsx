@@ -19,7 +19,7 @@ import {
 const returnSteps = [
   {
     title: "Initiate Request",
-    desc: "Email us at customercare@obeetee.com within 7 days of delivery with your Order ID and photos of the product.",
+    desc: "Email us at customercare@RugSifi.com within 7 days of delivery with your Order ID and photos of the product.",
     icon: <Mail className="w-6 h-6" />,
   },
   {
