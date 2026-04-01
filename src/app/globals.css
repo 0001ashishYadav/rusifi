@@ -1,1 +1,163 @@
 @import "tailwindcss";
+
+/* Fonts */
+
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #080706;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9933a;
+}
+
+/* Shimmer gradient text */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #c9933a 0%,
+    #f2d08a 40%,
+    #c9933a 60%,
+    #e8b86d 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Card stagger-in (uses CSS custom property --i) */
+.card-in {
+  animation: cardIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0ms) both;
+}
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Shine sweep on hover */
+.shine-run {
+  animation: shineSweep 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes shineSweep {
+  from {
+    transform: translateX(-110%) skewX(-15deg);
+  }
+  to {
+    transform: translateX(320%) skewX(-15deg);
+  }
+}
+
+/* Modal */
+.modal-enter {
+  animation: modalIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.bd-enter {
+  animation: bdIn 0.28s ease both;
+}
+@keyframes bdIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pulsing live dot */
+.live-ring {
+  animation: liveRing 1.8s ease-out infinite;
+}
+@keyframes liveRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* Marquee */
+.marquee-track {
+  animation: marquee 22s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade-up stagger for hero */
+.fu1 {
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+.fu2 {
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+.fu3 {
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+.fu4 {
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
